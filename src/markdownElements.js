@@ -12,7 +12,8 @@ var elements = {
   PARA: 'para',
   SECTION: 'Section',
   SPAN: 'span',
-  STRONG: 'strong'
+  STRONG: 'strong',
+  HR: 'hr',
 };
 
 module.exports = elements;

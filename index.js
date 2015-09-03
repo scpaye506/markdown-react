@@ -22,6 +22,7 @@ function getDefaultReactComponents() {
   components[EL.PARA] = reactComponents[EL.PARA];
   components[EL.SECTION] = reactComponents[EL.SECTION];
   components[EL.STRONG] = reactComponents[EL.STRONG];
+  components[EL.HR] = reactComponents[EL.HR];
   return components;
 }
 

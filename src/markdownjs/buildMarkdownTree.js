@@ -24,6 +24,7 @@ function getDefaultBuilders() {
   builders[EL.NUMBERLIST] = customBuildFactory(EL.NUMBERLIST);
   builders[EL.PARA] = customBuildFactory(EL.PARA);
   builders[EL.STRONG] = customBuildFactory(EL.STRONG);
+  builders[EL.HR] = customBuildFactory(EL.HR);
   return builders;
 }
 
