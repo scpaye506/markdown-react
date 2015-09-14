@@ -50,6 +50,16 @@ var Image = React.createClass({
   }
 });
 
+var Code = React.createClass({
+  displayName: 'Code',
+
+  render: function render() {
+    var values = this.props.builder.buildValues(this.props.component.values);
+    var codeElement = React.createElement('code', null, values );
+    return React.createElement('pre', null, codeElement);
+  }
+});
+
 
 function createReactClass(element) {
   return React.createClass({
@@ -66,7 +76,7 @@ exports[EL.BULLETLIST] = createReactClass('ul');
 exports[EL.EM] = createReactClass('em');
 exports[EL.HEADER] = Header;
 exports[EL.IMAGE] = Image;
-exports[EL.INLINECODE] = createReactClass('code');
+exports[EL.INLINECODE] = Code;
 exports[EL.LISTITEM] = createReactClass('li');
 exports[EL.LINK] = Link;
 exports[EL.LINKREF] = Link;
